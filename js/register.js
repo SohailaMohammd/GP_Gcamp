@@ -21,7 +21,8 @@ let eye = document.getElementById("eye");
 let reg_password = document.getElementById("reg-password");
 
 let valueinput = Reg_sur_user.value;
-reg_password.addEventListener("input.value", () => {
+
+reg_password.addEventListener("input", () => {
     if (reg_password.value.trim() !== "") {
         lock.style.visibility = "hidden";
         eye.style.visibility = "hidden";
