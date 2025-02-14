@@ -374,6 +374,8 @@ input::placeholder {
     font-weight: bold;
     font-style: normal;
     border: 2px solid #BFBFBF;
+    cursor: pointer;
+
 }
 
 .btn1:hover {
@@ -400,6 +402,8 @@ input::placeholder {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    cursor: pointer;
+
 }
 
 .footer {

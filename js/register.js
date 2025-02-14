@@ -97,18 +97,20 @@ document.getElementById("register-form").addEventListener("submit", async functi
     try {
         const response = await fetch("https://orientonline.info/api/register", {
             method: "POST",
-            headers: { 
+            headers: {
                 "Content-Type": "application/json",
-                "Accept": "application/json" 
+                "Accept": "application/json"
             },
             body: JSON.stringify({ name, email, password, password_confirmation, phone, address }),
         });
-        const data = await response.json(); 
+        const data = await response.json();
         console.log("Raw Response: ", data);
 
         if (response.ok) {
             console.log("Registration Successful:", data);
             alert("Registration Successful: " + data.message);
+            window.location.href = "Login.html";
+
         } else {
             console.error("Registration Failed:", data);
             alert("Registration Failed: " + (data.message || "Unknown error"));
@@ -117,5 +119,4 @@ document.getElementById("register-form").addEventListener("submit", async functi
         console.error("Network Error:", error);
         alert("Network Error: Could not connect to the server.");
     }
-    window.location.href = "login.html";
 });
