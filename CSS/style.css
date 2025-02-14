@@ -236,8 +236,8 @@ input {
 .containerHom {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background: url('../images/Frame\ 1261156057.png');
-    /* height: 400px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -709,6 +709,7 @@ input {
     }
     .containerHom{
         flex-direction: column-reverse;
+        background-size: cover;
         .row{
             margin: 0px 10px;
             text-align: center;
