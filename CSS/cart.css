@@ -60,13 +60,12 @@ body {
     }
 }
 
-.arabic {
+/* .arabic {
     font-weight: 600;
-    color: white;
-    background-color: #008080;
+    color: black;
     padding: 6px 13px;
     border-radius: 20px;
-}
+} */
 
 .links li a {
     text-decoration: none;
@@ -74,10 +73,10 @@ body {
 
 }
 
-.arabic a {
+/* .arabic a {
     text-decoration: none;
     color: white !important;
-}
+} */
 
 .cartPage {
     padding: 0px 180px;
