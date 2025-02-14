@@ -318,7 +318,7 @@ h2 {
     backdrop-filter: blur(10px);
     display: none;
     transition: all 0.3s linear;
-
+    margin: 58px 1px;
     .icons {
         text-align: center;
     }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/allproduct.css">
 </head>
+
 <body>
     <!-------navbar ------>
     <div class="headerGroup">
@@ -26,59 +28,85 @@
             <img class="icon" src="./images/clarity_notification-line.svg" alt="">
 
         </div>
+        <li class="menu" onclick="showLinks()">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </a>
+        </li>
     </div>
+    <ul class="linkshide">
+        <li onclick="hideLinks()">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </a>
+        </li>
+        <div class="icons">
+            <img class="icon" src="./images/heart.svg" alt="">
+            <img class="user" src="./images/Frame 1000005950.svg" width="30px" alt="">
+            <img id="cart2" class="icon active" src="./images/Group 1000005949.svg" alt="">
+            <img class="icon" src="./images/clarity_notification-line.svg" alt="">
 
-   
+        </div>
+    </ul>
 
-<!-- all products-->
-    <div class="text"><h1>Our Products</h1></div>
+
+
+    <!-- all products-->
+    <div class="text">
+        <h1>Our Products</h1>
+    </div>
     <div class="carts ">
-       
-    </div> 
+
+    </div>
 
 
 
 
-<!--------footer------->
-<div class="footer">
-    <div class="logo">
-        <img src="./images/AGORA.png" alt="">
-        <div class="icons-footer">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+    <!--------footer------->
+    <div class="footer">
+        <div class="logo">
+            <img src="./images/AGORA.png" alt="">
+            <div class="icons-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+        <div class="service">
+            <h2 class="header">Customer Services</h2>
+            <div class="link-serv">
+                <p class="ul">FAQs</p>
+                <p class="ul">Terms & Conditions</p>
+                <p class="ul">Privacy Policy</p>
+            </div>
+        </div>
+        <div class="profile">
+            <h2 class="header">Profile</h2>
+            <div class="link-profile">
+                <p class="ul">My Account</p>
+                <p class="ul">Wishlist</p>
+                <p class="ul">Account Settings</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2 class="header">Contact Us</h2>
+            <div class="link-contact">
+                <p class="ul">Phone: 305-555-0123</p>
+                <p class="ul">Email: contactstore@fakemail.com</p>
+                <p class="ul">Address: 789 Elm St, Oriando, FL 328</p>
+            </div>
         </div>
     </div>
-    <div class="service">
-        <h2 class="header">Customer Services</h2>
-        <div class="link-serv">
-            <p class="ul">FAQs</p>
-            <p class="ul">Terms & Conditions</p>
-            <p class="ul">Privacy Policy</p>
-        </div>
-    </div>
-    <div class="profile">
-        <h2 class="header">Profile</h2>
-        <div class="link-profile">
-            <p class="ul">My Account</p>
-            <p class="ul">Wishlist</p>
-            <p class="ul">Account Settings</p>
-        </div>
-    </div>
-    <div class="contact">
-        <h2 class="header">Contact Us</h2>
-        <div class="link-contact">
-            <p class="ul">Phone: 305-555-0123</p>
-            <p class="ul">Email: contactstore@fakemail.com</p>
-            <p class="ul">Address: 789 Elm St, Oriando, FL 328</p>
-        </div>
-    </div>
-</div>
-    
-    
 
-    
+
+
+
     <script src="./js/allproduct.js"></script>
 </body>
+
 </html>
-    

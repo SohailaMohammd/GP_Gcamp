@@ -74,5 +74,8 @@ document.getElementById("menuIcon").addEventListener("click", function() {
 
 document.getElementById("cart").addEventListener("click", function () {
     window.location.href = "cart.html";
-});
+  });
+  document.getElementById("cart2").addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
 
