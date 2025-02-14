@@ -109,7 +109,7 @@ document.getElementById("register-form").addEventListener("submit", async functi
         if (response.ok) {
             console.log("Registration Successful:", data);
             alert("Registration Successful: " + data.message);
-            window.location.href = "Login.html";
+            window.location.href = "login.html";
 
         } else {
             console.error("Registration Failed:", data);
