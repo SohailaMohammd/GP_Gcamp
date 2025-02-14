@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lemonada", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.headerGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px;
+}
+
+.active {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #73C7C7;
+    color: black;
+    cursor: pointer;
+} 
+
+.icon {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.user {
+    margin-right: 25px;
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    font-size: 14px;
+
+    li {
+        list-style: none;
+    }
+}
+
+.arabic {
+    font-weight: 600;
+    color: white;
+    background-color: #008080;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.arabic a {
+    text-decoration: none;
+    color: white !important;
+}
+
+
+input {
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    font-family: "Lemonada", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 50px;
+    gap: 15px;
+}
+
+.hom {
+    color: rgb(180, 179, 179);
+    font-weight: 700;
+}
+
+.abo {
+    color: #008080;
+    font-weight: 700;
+
+}
+
+.contactHead {
+    text-align: center;
+    font-size: 69.09px;
+    color: #008080;
+    margin-top: 100px;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 194px;
+}
+
+.contactUs .Contact-img img {
+    width: 300px;
+    margin: 20px 0px;
+}
+
+.contactUs .Contact-img .con {
+    text-align: center;
+    width: 600px;
+    margin: 5px auto;
+    color: rgba(0, 0, 0, 0.363);
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 50px 0px;
+    gap: 50px;
+}
+
+.first-name,
+.sur-name {
+    width: 100%;
+    text-align: start;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-left: 35px;
+    height: 53.55px;
+    margin: 10px 0px;
+
+}
+
+.mail {
+    text-align: start;
+}
+
+#envelope {
+    color: #BFBFBF;
+    position: absolute;
+    z-index: 10;
+
+    .fa-envelope {
+        left: 8px;
+        top: 27px;
+        position: absolute;
+    }
+}
+
+#user {
+    color: #BFBFBF;
+    position: absolute;
+    z-index: 10;
+
+    .fa-user-pen {
+        left: 8px;
+        top: 26px;
+        position: absolute;
+    }
+}
+
+#user-pen {
+    color: #BFBFBF;
+    position: absolute;
+    z-index: 10;
+
+    .fa-user-pen {
+        left: 8px;
+        top: 26px;
+        position: absolute;
+    }
+}
+
+.messages {
+    text-align: start;
+    margin: 25px 0px;
+
+    textarea {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 20px 35px;
+        margin: 10px 0px;
+        font-family: "Lemonada", serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+#messg {
+    color: #BFBFBF;
+    position: absolute;
+    z-index: 10;
+
+    .fa-message {
+        left: 12px;
+        top: 35px;
+        position: absolute;
+    }
+}
+
+
+.submit {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #008080;
+    height: 54px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Lemonada", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+.header,
+.ul {
+    margin: 25px 0px;
+}
+
+footer {
+    background: url('../images/Frame\ 1261156057.png');
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px;
+    background: url('../images/Frame\ 1261156057.png');
+    color: #008080;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px;
+    font-size: 10px;
+
+}
+
+.icons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    color: #008080;
+}
+
+.linkshide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.45);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: start;
+    backdrop-filter: blur(10px);
+    display: none;
+    transition: all 0.3s linear;
+    margin-top: 70px;
+
+    .icons {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        margin: 5px auto;
+        border-radius: 8px;
+        width: 180px;
+        height: 60px;
+        padding: 10px 30px;
+        cursor: pointer;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    .link:hover {
+        background-color: #f0f0f0;
+    }
+
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width : 768px) {
+    .menu {
+        display: block;
+    }
+
+    .headerGroup {
+        img {
+            width: 50px;
+        }
+
+        .links {
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .icons {
+            display: none;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .contactHead {
+        font-size: 22px;
+    }
+
+    .contactUs {
+        padding: 0px 35px;
+    }
+
+    .contactUs .Contact-img .con {
+        width: 100%;
+    }
+
+    .name {
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 10px;
+        /* flex-direction: column; */
+        padding: 20px;
+
+        .logo {
+            width: 70px;
+            padding: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

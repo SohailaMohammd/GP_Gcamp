@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./Css/login.css">
+</head>
+
+<body>
+    <form id="login-form" action="">
+        <h1>Hi,Welcome to <img src="./images/AGORA.png" alt=""></h1>
+        <p>New here? <a href="register.html">Create an account.</a></p>
+        <div class="email">
+            <label for="">Email address</label><br>
+            <div class="input">
+                <div id="envelpe">
+                    <i class="fa-regular fa-envelope" style="color: #92959b;">
+
+                    </i>
+                </div>
+                <input type="email" placeholder="lslslsks@gmail.com" id="email-login">
+            </div>
+        </div>
+        <div class="password">
+            <label for="">Password</label><br>
+            <div class="input">
+                <div id="lock">
+                    <i class="fa-solid fa-lock" style="color: #92959b;"></i>
+
+                </div>
+                <input type="password" id="password-login">
+                <div id="eye-lock">
+                    <i class="fa-solid fa-eye-slash" style="color: #b5b7ba;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="check">
+            <!-- <div class="remember">
+                <input type="checkbox" name="" id="remember">
+                <label for="remember">Remeber this device</label>
+            </div> -->
+            <p class="forget">Forgot Your password</p>
+        </div>
+        <button class="login">Log In</button>
+        <div class="login-with">
+            <hr class="one">
+            <p class="login-with">Or Login With</p>
+            <hr class="two">
+        </div>
+        <button class="sign"><i class="fa-brands fa-google" style="color: #03810c;"></i>sign up with Google</button>
+    </form>
+    <script src="./js/login.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>

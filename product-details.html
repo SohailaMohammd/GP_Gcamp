@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+
+<body>
+
+    <div class="headerGroup">
+        <img src="./images/AGORA.png" alt="" width="100px">
+        <div class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </div>
+        <div class="icons">
+            <img class="icon" src="./images/heart.svg" alt="">
+            <img class="user" src="./images/Frame 1000005950.svg" width="30px" alt="">
+            <img id="cart" class="icon active" src="./images/Group 1000005949.svg" alt="">
+            <img class="icon" src="./images/clarity_notification-line.svg" alt="">
+
+        </div>
+    </div>
+
+   
+    <!-- <div class="container">
+        <div class="styles">
+            <img src="./images/image 5.png" alt="">
+            <img src="./images/image 5.png" alt="">
+            <img src="./images/image 5.png" alt="">
+        </div>
+        <div class="product">
+            <img src="./images/image 5.png" alt="">
+        </div>
+        <div class="productData">
+            <h1 class="classic">Classic T-Shirt</h1>
+            <p class="classical">
+                Made from premium cotton, it's soft, durable, and perfect for any occasion.
+            </p>
+            <div class="productprice">
+                $12.00
+            </div>
+            <div class="rate">
+                <div class="stars">
+                </div>
+                <div class="num">414 reviews</div>
+            </div>
+            <div class="colors">
+                <h4>colors</h4>
+                <div class="color">
+                    <div class="blue"></div>
+                    <div class="black"></div>
+                    <div class="red"></div>
+                    <div class="green"></div>
+
+                </div>
+            </div>
+            <div class="sizes">
+                <h4>Sizes</h4>
+                <div class="size">
+                    <div class="medium">M</div>
+                    <div class="medium">M</div>
+                    <div class="medium">M</div>
+                    <div class="medium">M</div>
+
+                </div>
+            </div>
+            <button class="addCart">
+                Add To Cart
+            </button>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="product-details">
+
+            <div class="product-image">
+                <img id="productImage" src="./images/image 5.png" alt="Product Image">
+            </div>
+            
+
+            <div class="product-info">
+                <h1 id="productTitle"></h1>
+                <p class="product-description" id="productDescription"></p>
+
+                <div class="price-container">
+                    <span class="current-price" id="productPrice"></span>
+                    <span class="old-price" id="oldPrice"></span>
+                </div>
+                <div class="quantity-container">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+
+
+                <div class="size-container">
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+
+                <button id="addToCart" class="cart-button"><a href="cart.html">Add to Cart</a></button>
+
+
+                <a href="All product.html" class="back-button">Back to Products</a>
+            </div>
+        </div>
+    </div>
+
+    <!------reviews------>
+    <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="firstreview">
+            <div class="photo">
+                <img src="./images/person-removebg-preview.png" alt="">
+            </div>
+            <div class="preview">
+                <div class="group">
+                    <h4 class="name">
+                        Omar Khaled
+                    </h4>
+                    <div class="stars">
+
+                    </div>
+                </div>
+                <div class="para">
+                    Perfect Fit and Great Quality! The fabric feels amazing, and the color hasn't faded after
+                    multiple washes. Highly recommend!
+                </div>
+                <div class="cont">
+                    <p class="like">Like</p>
+                    <p class="replay">
+                        Replay
+                    </p>
+                    <p class="hour">
+                        5m
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="firstreview">
+            <div class="photo">
+                <img src="./images/person-removebg-preview.png" alt="">
+            </div>
+            <div class="preview">
+                <div class="group">
+                    <h4 class="name">
+                        Omar Khaled
+                    </h4>
+                    <div class="stars">
+
+                    </div>
+                </div>
+                <div class="para">
+                    Perfect Fit and Great Quality! The fabric feels amazing, and the color hasn't faded after
+                    multiple washes. Highly recommend!
+                </div>
+                <div class="cont">
+                    <p class="like">Like</p>
+                    <p class="replay">
+                        Replay
+                    </p>
+                    <p class="hour">
+                        5m
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="your_review">
+            <div class="photo">
+                <img src="./images/person-removebg-preview.png" alt="">
+            </div>
+
+            <div class="big">
+                <div class="group">
+                    <div class="para">
+                        <textarea id="review-text" placeholder="Write your review..."
+                            style="width:80%;height:80px; padding:10px;"></textarea>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="rating">
+                        <p class="like">Your rating: </p>
+                        <p class="replay">
+                            Replay
+                        </p>
+                    </div>
+                    <p class="hour">
+                        <button id="post-review-btn"
+                            style="background-color: #008080;border: 1px solid #008080;color:white; height: 30px;width:120px">Post
+                            Review ></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Similar product-------->
+
+    <div class="row2">
+        <h2>Similar</h2>
+        <div>
+            <a href="All product.html">View All</a>
+            <img src="imges/arrow.png" alt="" width="5px">
+        </div>
+    </div>
+    <div class="carts offers"></div>
+    <!--------footer-------->
+    <div class="footer">
+        <div class="logo">
+            <img src="./images/AGORA.png" alt="" width="100px" height="100%">
+            <div class="icons-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+        <div class="service">
+            <h2 class="header">Customer Services</h2>
+            <div class="link-serv">
+                <p class="ul">FAQs</p>
+                <p class="ul">Terms & Conditions</p>
+                <p class="ul">Privacy Policy</p>
+            </div>
+        </div>
+        <div class="profile">
+            <h2 class="header">Profile</h2>
+            <div class="link-profile">
+                <p class="ul">My Account</p>
+                <p class="ul">Wishlist</p>
+                <p class="ul">Account Settings</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2 class="header">Contact Us</h2>
+            <div class="link-contact">
+                <p class="ul">Phone: 305-555-0123</p>
+                <p class="ul">Email: contactstore@fakemail.com</p>
+                <p class="ul">Address: 789 Elm St, Oriando, FL 328</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/product-details.js"></script>
+</body>
+
+</html>

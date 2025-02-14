@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/Cart Page.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+</head>
+
+<body>
+    
+    <div class="headerGroup">
+        <img src="./images/AGORA.png" alt="" width="100px">
+        <div class="links">
+            <li class="arabic"><a href="Home.html">Home</a></li>
+         
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </div>
+        <div class="icons">
+            <img class="icon" src="./images/heart.svg" alt="">
+            <img class="user" src="./images/Frame 1000005950.svg" width="30px" alt="">
+            <img id="cart" class="icon active" src="./images/Group 1000005949.svg" alt="">
+            <img class="icon" src="./images/clarity_notification-line.svg" alt="">
+
+        </div>
+    </div>
+
+
+   
+    <hr>
+    <div class="line" style="margin-top:130px;">
+        <hr>
+        <div class="cart">
+            <p class="one">1</p>
+        </div>
+        <p class="two">2</p>
+        <p class="three">3</p>
+    </div>
+    <div class="container">
+        
+            <h2>Shipping Address</h2>
+
+        <div class="form">
+            <div class=check>
+                <i class="fa-regular fa-circle-dot"></i>
+                <label for="check">Add New Address</label>
+            </div>
+
+            <div class="name">
+                <div class="first-name">
+                    <label for="">First name</label><br>
+                    <div class="input">
+                        <div id="user">
+                            <i class="fa-solid fa-user-pen" style="color: #92959b;"></i>
+                        </div>
+                        <input type="text" placeholder="Ahmed" id="reg-name">
+                    </div>
+                </div>
+                <div class="sur-name">
+                    <label for="">Last Name </label><br>
+                    <div class="input">
+                        <div id="user-pen">
+                            <i class="fa-solid fa-user-pen" style="color: #92959b;"></i>
+                        </div>
+                        <input type="text" placeholder="sassasas" id="reg-sur-name">
+                    </div>
+                </div>
+            </div>
+            <div class="email-gender">
+                
+                <div class="gender">
+                    <label for="gen">Phone</label><br>
+                    <div class="input">
+                        <div id="envelope">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <input type="email" placeholder="+20123456789" id="reg-email">
+                    </div>
+                </div>
+                <div class="mail">
+                    <label for="">Email address</label><br>
+                    <div class="input">
+                        <div id="envelope">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <input type="email" placeholder="lslslsks@gmail.com" id="reg-email">
+                    </div>
+                </div>
+            </div>
+            <div class="pass-con">
+                <div class="gender">
+                    <label for="gen">Address</label><br>
+                    <div class="input">
+                        <div id="gender">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <select class="inputAdd" name="country" id="country">
+                            <option value="egp">Egypt</option>
+                            <option value="usa">United State</option>
+                            <option value="canada">Canada</option>
+                            <option value="aust">Australia</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button class="btn1">Cancel</button>
+                <button class=btn2 id="order">Order</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!------footer--------->
+    <div class="footer">
+        <div class="logo">
+            <img src="./images/AGORA.png" alt="">
+            <div class="icons-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+        <div class="service">
+            <h2 class="header">Customer Services</h2>
+            <div class="link-serv">
+                <p class="ul">FAQs</p>
+                <p class="ul">Terms & Conditions</p>
+                <p class="ul">Privacy Policy</p>
+            </div>
+        </div>
+        <div class="profile">
+            <h2 class="header">Profile</h2>
+            <div class="link-profile">
+                <p class="ul">My Account</p>
+                <p class="ul">Wishlist</p>
+                <p class="ul">Account Settings</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2 class="header">Contact Us</h2>
+            <div class="link-contact">
+                <p class="ul">Phone: 305-555-0123</p>
+                <p class="ul">Email: contactstore@fakemail.com</p>
+                <p class="ul">Address: 789 Elm St, Oriando, FL 328</p>
+            </div>
+        </div>
+    </div>
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    let btn = document.getElementById("order");
+
+    if (btn) {
+        console.log("Button found:", btn.id);
+
+        btn.addEventListener("click", function (event) {
+            event.preventDefault(); 
+            console.log(" Redirecting to Home.html...");
+            window.location.href = "payment.html";
+        });
+    } else {
+        console.error(" Error: Button not found!");
+    }
+});
+
+
+document.getElementById("cart").addEventListener("click", function () {
+    window.location.href = "cart.html";
+});
+
+</script>
+</body>
+
+</html>
