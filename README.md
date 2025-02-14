@@ -2,6 +2,7 @@
 
 Welcome to the AGORA E-commerce Application repository! This project aims to provide a seamless and enjoyable shopping experience for users. AGORA offers a wide range of high-quality products, from the latest fashion trends and cutting-edge electronics to unique home decor and everyday essentials.
 
+![final2](https://github.com/user-attachments/assets/a1eec9dc-7590-4b7b-a7aa-7f4080d23742)
 
 ### Features
 - User-Friendly Interface: Designed to be intuitive and easy to navigate.
