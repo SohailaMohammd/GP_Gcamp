@@ -716,6 +716,9 @@ input {
             p,input{
                 width: 100%;
             }
+            h2,p{
+                font-size: 15px;
+            }
         }
     }
     .footer {

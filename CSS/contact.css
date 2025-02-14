@@ -36,7 +36,7 @@ body {
     background-color: #73C7C7;
     color: black;
     cursor: pointer;
-} 
+}
 
 .icon {
     width: 22px;
@@ -380,6 +380,7 @@ footer {
         .logo {
             width: 70px;
             padding: 10px;
+            display: none;
 
             img {
                 width: 100%;
