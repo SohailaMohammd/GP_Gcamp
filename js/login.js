@@ -10,15 +10,20 @@ emailInput.addEventListener("focus", () => {
    envelope.style.visibility = "hidden";
 });
 emailInput.addEventListener("blur", () => {
-   envelope.style.visibility = "visible";
+   if (emailInput.value.trim() === "") {
+      envelope.style.visibility = "visible";
+   }
 });
 passwordInput.addEventListener("focus", () => {
    lock.style.visibility = "hidden";
    eyeLock.style.visibility = "hidden";
 });
 passwordInput.addEventListener("blur", () => {
-   lock.style.visibility = "visible";
-   eyeLock.style.visibility = "visible";
+   if (passwordInput.value.trim() === "") {
+      lock.style.visibility = "visible";
+      eyeLock.style.visibility = "visible";
+
+   }
 });
 
 
