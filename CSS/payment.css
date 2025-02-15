@@ -705,10 +705,14 @@ h2 {
     padding: 10px;
     width: 45%;
     cursor: pointer;
+    font-family: "Lemonada", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .cancel:hover {
-    background-color: rgba(211, 211, 211, 0.671);
+    background-color: rgba(130, 130, 130, 0.858);
 
 }
 
@@ -718,6 +722,9 @@ h2 {
     border: none;
     padding: 10px;
     width: 45%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 
     a {
         text-decoration: none;
@@ -730,7 +737,7 @@ h2 {
 }
 
 .order:hover {
-    background: rgba(0, 128, 128, 0.801);
+    background: #006b6b;
 }
 
 @media (max-width: 600px) {

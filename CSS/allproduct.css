@@ -316,9 +316,9 @@ h1 {
 }
 
 .cart-item button:hover {
-    background-color: white;
-    color: #008080;
-    border: 2px solid #115573;
+    background-color: #006b6b;
+    /* color: #008080;
+    border: 2px solid #008080; */
 }
 
 .cart-item h3 {

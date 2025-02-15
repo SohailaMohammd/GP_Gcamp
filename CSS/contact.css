@@ -246,7 +246,9 @@ input {
     font-weight: bold;
     font-style: normal;
 }
-
+.submit:hover{
+    background-color: #006b6b;
+}
 
 
 .header,

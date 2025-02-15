@@ -1413,10 +1413,7 @@ display:none;
       }
   }
 
-  .cart-button:hover {
-      background: #008080;
-      color: white;
-  }
+  
 
 
   .back-button {
@@ -1630,11 +1627,6 @@ display:none;
 
   }
 
-  .cart-item button:hover {
-      background-color: white;
-      color: white;
-      border: 2px solid #008080;
-  }
 
   .cart-item h3 {
       font-size: 15px;
@@ -2105,11 +2097,10 @@ display:none;
   }
 
   @media (max-width : 420px) {
-      .your_review .group {
-          width: 71%;
-      }
-
-      .your_review .cont {
-          flex-direction: column;
-      }
-  }
+    .your_review .group {
+        width: 71%;
+    }
+    .your_review .cont{
+        flex-direction: column;
+    }
+}

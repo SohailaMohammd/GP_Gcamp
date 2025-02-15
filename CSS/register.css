@@ -151,23 +151,7 @@ button {
     right: 0px;
 }
 
-/* .login-with::before {
-    content: "";
-    position: absolute;
-    width: 35%;
-    right: 25px;
-    top: 10px;
-    border: 1px solid #b3b5b5;
-}
 
-.login-with::after {
-    content: "";
-    position: absolute;
-    width: 35%;
-    left: 25px;
-    top: 10px;
-    border: 1px solid #b3b5b5;
-} */
 
 .sign {
     display: flex;
@@ -184,8 +168,8 @@ button {
     cursor: pointer;
     border: 2px solid #959595;
     font-weight: normal;
-
 }
+
 
 @media (max-width:768px) {
     h1 {

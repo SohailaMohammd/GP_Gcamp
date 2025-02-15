@@ -384,9 +384,8 @@ input::placeholder {
 }
 
 .btn2:hover {
-    background-color: white;
-    color: #008080;
-    border: 2px solid #008080;
+    background-color: #006b6b;;
+    
 }
 
 .btn2 {
