@@ -22,58 +22,79 @@ let reg_password = document.getElementById("reg-password");
 
 let valueinput = Reg_sur_user.value;
 
+
+
 reg_password.addEventListener("input", () => {
     if (reg_password.value.trim() !== "") {
         lock.style.visibility = "hidden";
         eye.style.visibility = "hidden";
-
-    } else {
+    } 
+});
+reg_password.addEventListener("blur", () => {
+    if (reg_password.value.trim() === "") {
         lock.style.visibility = "visible";
         eye.style.visibility = "visible";
-
-
-    }
+    } 
 });
+
+
 reg_passwordConfirm.addEventListener("input", () => {
     if (reg_passwordConfirm.value.trim() !== "") {
         eyeConfirm.style.visibility = "hidden";
         lockConfirm.style.visibility = "hidden";
-
-    } else {
-        lockConfirm.style.visibility = "visible";
-        eyeConfirm.style.visibility = "visible";
-    }
+    } 
 });
+
+reg_passwordConfirm.addEventListener("blur", () => {
+    if (reg_passwordConfirm.value.trim() === "") {
+        eyeConfirm.style.visibility = "visible";
+        lockConfirm.style.visibility = "visible";
+    } 
+});
+
 Reguser.addEventListener("input", () => {
     if (Reguser.value.trim() !== "") {
         user.style.visibility = "hidden";
-    } else {
-        user.style.visibility = "visible";
-
-    }
+    } 
 });
+Reguser.addEventListener("blur", () => {
+    if (Reguser.value.trim() === "") {
+        user.style.visibility = "visible";
+    } 
+});
+
 Reg_sur_user.addEventListener("input", () => {
     if (Reg_sur_user.value.trim() !== "") {
         userPen.style.visibility = "hidden";
-
-    } else {
-        userPen.style.visibility = "visible";
-    }
+    } 
 });
+
+Reg_sur_user.addEventListener("blur", () => {
+    if (Reg_sur_user.value.trim() === "") {
+        userPen.style.visibility = "visible";
+    } 
+});
+
+
 emailInput.addEventListener("input", () => {
     if (emailInput.value.trim() !== "") {
         envelope.style.visibility = "hidden";
-    } else {
+    } 
+});
+emailInput.addEventListener("blur", () => {
+    if (emailInput.value.trim() === "") {
         envelope.style.visibility = "visible";
-
-    }
+    } 
 });
 addressInput.addEventListener("input", () => {
     if (addressInput.value.trim() !== "") {
         address.style.visibility = "hidden";
-    } else {
+    } 
+});
+addressInput.addEventListener("blur", () => {
+    if (addressInput.value.trim() === "") {
         address.style.visibility = "visible";
-    }
+    } 
 });
 
 document.getElementById("register-form").addEventListener("submit", async function (event) {
@@ -107,8 +128,8 @@ document.getElementById("register-form").addEventListener("submit", async functi
         console.log("Raw Response: ", data);
 
         if (response.ok) {
-            console.log("Registration Successful:", data);
-            alert("Registration Successful: " + data.message);
+            console.log("Registration Successful:", data.name);
+            alert("Registration Successful! Welcome, " + (data.user?.name || "User"));
             window.location.href = "login.html";
 
         } else {

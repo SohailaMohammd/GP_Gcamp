@@ -67,7 +67,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
 
       if (response.ok) {
          console.log("Login Successful:", data);
-         alert("Login Successful: " + data.message);
+         alert("Registration Successful! Welcome, " + (data.user?.name || "User"));
          window.location.href = "Home.html";
 
       } else {
