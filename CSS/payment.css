@@ -785,7 +785,24 @@ h2 {
     align-items: center;
 
 }
+.word{
+    position: absolute;
+    margin-top: 10px;
+    color: #008080;
+}
+.word2{
+    position: absolute;
+    margin-top: 10px;
+    left: 48%;
+    color: #008080;
+}
+.word3{
+    position: absolute;
+    margin-top: 10px;
+    left: 99%;
+    color: #008080;
 
+}
 .two {
     position: absolute;
     width: 30px;

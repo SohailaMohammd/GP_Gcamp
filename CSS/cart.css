@@ -101,7 +101,24 @@ body {
     align-items: center;
     color: white;
 }
+.word{
+    position: absolute;
+    margin-top: 10px;
+    color: #008080;
+}
+.word2{
+    position: absolute;
+    margin-top: 10px;
+    left: 48%;
+    color: rgba(0, 0, 0, 0.422);
+}
+.word3{
+    position: absolute;
+    margin-top: 10px;
+    left: 99%;
+    color: rgba(0, 0, 0, 0.422);
 
+}
 .two {
     border: 1px solid rgba(0, 0, 0, 0.3);
     position: absolute;
