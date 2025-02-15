@@ -440,12 +440,18 @@ h2 {
 
     .cartPage .line hr {
         width: 82%;
+        margin: 0px auto;
     }
 
     .one {
         left: 6%;
     }
-
+.word,.word2,.word3{
+    display: none;
+}
+    .two {
+        left: 42%;
+    }
     .three {
         left: 88%;
     }

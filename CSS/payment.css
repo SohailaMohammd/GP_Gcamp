@@ -785,24 +785,28 @@ h2 {
     align-items: center;
 
 }
-.word{
+
+.word {
     position: absolute;
     margin-top: 10px;
     color: #008080;
 }
-.word2{
+
+.word2 {
     position: absolute;
     margin-top: 10px;
     left: 48%;
     color: #008080;
 }
-.word3{
+
+.word3 {
     position: absolute;
     margin-top: 10px;
     left: 99%;
     color: #008080;
 
 }
+
 .two {
     position: absolute;
     width: 30px;
@@ -905,7 +909,28 @@ h2 {
         }
     }
 
+    .line hr {
+        width: 82%;
+        margin: 0px auto;
+    }
 
+    .one {
+        left: 6%;
+    }
+
+    .word,
+    .word2,
+    .word3 {
+        display: none;
+    }
+
+    .two {
+        left: 42%;
+    }
+
+    .three {
+        left: 88%;
+    }
 
     .footer {
         font-size: 10px;

@@ -110,7 +110,11 @@ input {
 
 .line {
     position: relative;
-    margin: 54px 180px 50px 180px;
+    margin: 120px 100px 50px 100px;
+
+    hr {
+        width: 100%;
+    }
 }
 
 .one {
@@ -128,18 +132,21 @@ input {
     align-items: center;
 
 }
-.word{
+
+.word {
     position: absolute;
     margin-top: 10px;
     color: #008080;
 }
-.word2{
+
+.word2 {
     position: absolute;
     margin-top: 10px;
     left: 48%;
     color: #008080;
 }
-.word3{
+
+.word3 {
     position: absolute;
     margin-top: 10px;
     left: 99%;
@@ -168,7 +175,7 @@ input {
     position: absolute;
     width: 30px;
     height: 30px;
-   border: 1px solid #92959b;
+    border: 1px solid #92959b;
     color: #92959b;
     text-align: center;
     border-radius: 50%;
@@ -402,8 +409,9 @@ input::placeholder {
 }
 
 .btn2:hover {
-    background-color: #006b6b;;
-    
+    background-color: #006b6b;
+    ;
+
 }
 
 .btn2 {
@@ -525,10 +533,35 @@ input::placeholder {
         display: block;
     }
 
+    .line hr {
+        width: 82%;
+        margin: 0px auto;
+    }
+
+    .one {
+        left: 6%;
+    }
+
+    .word,
+    .word2,
+    .word3 {
+        display: none;
+    }
+
+    .two {
+        left: 42%;
+    }
+
+    .three {
+        left: 88%;
+    }
+
     .headerGroup {
         img {
             width: 50px;
         }
+
+
 
         .links {
             gap: 10px;
@@ -560,6 +593,10 @@ input::placeholder {
         flex-direction: column;
     }
 
+    .email-gender {
+        flex-direction: column;
+    }
+
     .footer {
         font-size: 10px;
         padding: 20px;
@@ -567,11 +604,27 @@ input::placeholder {
         .logo {
             width: 70px;
             padding: 10px;
-            display:none ;
+            display: none;
 
             img {
                 width: 100%;
             }
         }
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .btn1,
+        .btn2 {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+
+    .container {
+        margin: 0px;
     }
 }
