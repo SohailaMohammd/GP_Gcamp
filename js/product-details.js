@@ -180,7 +180,7 @@ document.getElementById("cart").addEventListener("click", function () {
 
 
 document.getElementById("addToCart").addEventListener("click", function () {
-    let selectedSize = document.getElementById("size").value; // جلب المقاس المختار
+    let selectedSize = document.getElementById("size").value; 
     let urlParams = new URLSearchParams(window.location.search);
     let productId = urlParams.get("id");
 
@@ -195,7 +195,6 @@ document.getElementById("addToCart").addEventListener("click", function () {
                 return;
             }
 
-            // إنشاء كائن المنتج
             let cartProduct = {
                 id: product.id,
                 name: product.name,
