@@ -36,7 +36,7 @@ body {
     background-color: #73C7C7;
     color: black;
     cursor: pointer;
-} 
+}
 
 .icon {
     width: 22px;
@@ -162,6 +162,10 @@ body {
         display: block;
     }
 
+    .linkshide {
+        margin: 72px 0px;
+    }
+
     .headerGroup {
         img {
             width: 50px;
@@ -185,7 +189,7 @@ body {
         width: 300px;
     }
 
-   .container .one {
+    .container .one {
         font-size: 18px;
     }
 

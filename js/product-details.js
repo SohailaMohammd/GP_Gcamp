@@ -120,11 +120,11 @@ async function fetchData() {
 }
 
 fetchData();
-document.getElementById("menuIcon").addEventListener("click", function () {
-    document.querySelector(".menu").classList.toggle("show");
-    document.querySelector(".icon").classList.toggle("show");
+// document.getElementById("menuIcon").addEventListener("click", function () {
+//     document.querySelector(".menu").classList.toggle("show");
+//     document.querySelector(".icon").classList.toggle("show");
 
-});
+// });
 
 
 /**-------------------review---------------------------- */
@@ -231,3 +231,12 @@ document.getElementById("cart").addEventListener("click", function () {
 document.getElementById("cart2").addEventListener("click", function () {
     window.location.href = "cart.html";
 });
+
+function showLinks() {
+    const links = document.querySelector(".linkshide");
+    links.style.display = "flex";
+  }
+  function hideLinks() {
+    const links = document.querySelector(".linkshide");
+    links.style.display = "none";
+  }
